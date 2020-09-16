@@ -35,9 +35,14 @@ export default function Header(props: Props) {
       </div>
 
       <ButtonRowContainer>
-        <Link href="/about">
+       <Link href="/about">
           <GhostButton as="a" href="/about">
             About
+          </GhostButton>
+        </Link>
+        <Link href="/worksheet">
+          <GhostButton as="a" href="/worksheet">
+            Worksheet
           </GhostButton>
         </Link>
 
