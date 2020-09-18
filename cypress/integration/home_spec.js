@@ -1,11 +1,11 @@
-import data from "../../config/data";
+import data from '../../config/data';
 
-describe("Home", () => {
+describe('Home', () => {
   before(() => {
-    cy.visit("/");
+    cy.visit('/');
   });
 
-  it("should render content", () => {
+  it('should render content', () => {
     const dataKeys = Object.keys(data);
     dataKeys.map((key) => {
       cy.contains(data[key].title);
