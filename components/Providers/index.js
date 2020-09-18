@@ -1,9 +1,7 @@
-import { ThemeProvider } from 'styled-components';
-import Head from 'next/head';
-import { DefaultSeo } from 'next-seo';
-import { GlobalStyles } from '../../static/normalize';
-import SEO from '../../config/next-seo';
-import { theme } from '../theme';
+import { ThemeProvider } from "styled-components";
+import Head from "next/head";
+import { GlobalStyles } from "../../static/normalize";
+import { theme } from "../theme";
 
 interface Props {
   children?: any;
@@ -12,8 +10,6 @@ interface Props {
 export default function Providers({ children }: Props) {
   return (
     <>
-      <DefaultSeo {...SEO} />
-      
       <Head>
         <meta name="theme-color" content="#FFF" key="theme-color" />
 
@@ -98,10 +94,8 @@ export default function Providers({ children }: Props) {
       </Head>
 
       <GlobalStyles />
-      
-      <ThemeProvider theme={theme}>
-        {children}
-      </ThemeProvider>
+
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </>
   );
 }
