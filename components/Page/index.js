@@ -1,30 +1,22 @@
 // @flow
 // $FlowIssue
-import React, { useState, useEffect } from "react";
-import type { Node } from "react";
-import { ThemeProvider } from "styled-components";
-import { throttle } from "throttle-debounce";
-import Icon from "../Icon";
-import Header from "../Header";
-import Footer from "../Footer";
-import { theme } from "../theme";
-import {
-  Container,
-  Section,
-  SectionHeading,
-  Heading,
-  Subheading,
-  InnerContainer,
-  ScrollToTop,
-} from "./style";
-import { getLocalStorageLength } from "../../lib/localStorage";
-import data from "../../config/data";
+import React, { useState, useEffect } from 'react';
+import type { Node } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { throttle } from 'throttle-debounce';
+import Icon from '../Icon';
+import Header from '../Header';
+import Footer from '../Footer';
+import { theme } from '../theme';
+import { Container, Section, SectionHeading, Heading, Subheading, InnerContainer, ScrollToTop } from './style';
+import { getLocalStorageLength } from '../../lib/localStorage';
+import data from '../../config/data';
 
 export { SectionHeading, Section, Heading, Subheading };
 
 type Props = {
   children: Node,
-  displayProgress: boolean,
+  displayProgress: boolean
 };
 
 const totalItemsCount = Object.keys(data).length;
@@ -62,23 +54,23 @@ export default function Page(props: Props) {
     updateProgress();
 
     if (window) {
-      window.addEventListener("scroll", throttledScroll);
+      window.addEventListener('scroll', throttledScroll);
     }
 
     return () => {
       if (window) {
-        window.removeEventListener("scroll", throttledScroll);
+        window.removeEventListener('scroll', throttledScroll);
       }
     };
   }, [progress]);
 
   useEffect(() => {
     if (window && displayProgress) {
-      window.addEventListener("storage:updated", updateProgress);
+      window.addEventListener('storage:updated', updateProgress);
     }
     return () => {
       if (window && displayProgress) {
-        window.removeEventListener("storage:updated", updateProgress);
+        window.removeEventListener('storage:updated', updateProgress);
       }
     };
   });
@@ -102,11 +94,7 @@ export default function Page(props: Props) {
         />
         <InnerContainer>{children}</InnerContainer>
         <Footer />
-        <ScrollToTop
-          isVisible={scrollToTopVisible}
-          onClick={scrollToTop}
-          type="button"
-        >
+        <ScrollToTop isVisible={scrollToTopVisible} onClick={scrollToTop} type="button">
           <Icon glyph="view-forward" size={32} />
         </ScrollToTop>
       </Container>

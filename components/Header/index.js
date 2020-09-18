@@ -1,33 +1,20 @@
 // @flow
-import * as React from "react";
-import Link from "next/link";
-import {
-  Container,
-  ButtonRowContainer,
-  Label,
-  LogoLink,
-  Progression,
-  ProgressBar,
-  ProgressLabel,
-} from "./style";
-import { PrimaryButton, GhostButton } from "../Button";
-import Logo from "./Logo";
-import Confetti from "./Confetti";
+import * as React from 'react';
+import Link from 'next/link';
+import { Container, ButtonRowContainer, Label, LogoLink, Progression, ProgressBar, ProgressLabel } from './style';
+import { PrimaryButton, GhostButton } from '../Button';
+import Logo from './Logo';
+import Confetti from './Confetti';
 
 type Props = {
   showHeaderShadow: boolean,
   displayProgress: boolean,
   totalItemsCount: number,
-  currentCount: number,
+  currentCount: number
 };
 
 export default function Header(props: Props) {
-  const {
-    showHeaderShadow,
-    totalItemsCount,
-    currentCount,
-    displayProgress,
-  } = props;
+  const { showHeaderShadow, totalItemsCount, currentCount, displayProgress } = props;
 
   return (
     <Container showHeaderShadow={showHeaderShadow} data-cy="header">
@@ -49,11 +36,7 @@ export default function Header(props: Props) {
       </ButtonRowContainer>
 
       {displayProgress && (
-        <Progression
-          id="progress"
-          aria-label={`${currentCount} of ${totalItemsCount} completed`}
-          tabIndex="0"
-        >
+        <Progression id="progress" aria-label={`${currentCount} of ${totalItemsCount} completed`} tabIndex="0">
           <ProgressBar
             id="progress_bar"
             aria-describedby="progress_tooltip"
