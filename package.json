@@ -5,8 +5,7 @@
   "scripts": {
     "now-build": "next build",
     "dev": "next",
-    "start": "next start",
-    "build": "next build",
+    "start": "next start -p $PORT",
     "flow": "flow",
     "flow start": "flow start",
     "flow stop": "flow stop",
@@ -16,10 +15,12 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "lint:staged": "lint-staged",
-    "heroku-postbuild": "npm run build"
+    "build": "next build"
   },
   "dependencies": {
     "fathom-client": "^2.0.3",
+    "next": "^9.5.3",
+    "next-seo": "^4.7.3",
     "react": "^16.13.1",
     "react-clipboard.js": "^2.0.16",
     "react-dom": "^16.13.1",
