@@ -5,79 +5,10 @@ export default {
     `,
   apps: [
     {
-      name: 'FastMail',
-      image: '/static/img/fastmail.jpg',
-      url: 'https://www.fastmail.com/',
-      sources: {
-        windows: 'https://www.fastmail.com/',
-        macos: 'https://www.fastmail.com/',
-        ios:
-          'https://itunes.apple.com/us/app/fastmail-email-calendar/id931370077',
-        android:
-          'https://play.google.com/store/apps/details?id=com.fastmail.app',
-        linux: 'https://www.fastmail.com/',
-      },
-    },
-    {
       name: 'ProtonMail',
       image: '/static/img/protonmail.jpg',
-      url: 'https://protonmail.com//',
-      sources: {
-        windows: 'https://protonmail.com/',
-        macos: 'https://protonmail.com/',
-        ios:
-          'https://itunes.apple.com/app/protonmail-encrypted-email/id979659905',
-        android:
-          'https://play.google.com/store/apps/details?id=ch.protonmail.android',
-        linux: 'https://protonmail.com/',
-      },
-    },
-    {
-      name: 'SimpleLogin',
-      image: '/static/img/simplelogin.png',
-      url: 'https://simplelogin.io/',
-      sources: {
-        windows: 'https://simplelogin.io/',
-        linux: 'https://simplelogin.io/',        
-        macos: 'https://apps.apple.com/us/app/simplelogin/id1494051017?mt=12&fbclid=IwAR0M0nnEKgoieMkmx91TSXrtcScj7GouqRxGgXeJz2un_5ydhIKlbAI79Io'
-      },
-    },
-    {
-      name: 'Mailfence',
-      image: '/static/img/mailfence.png',
-      url: 'https://mailfence.com/',
-      sources: {
-        windows: 'https://mailfence.com',
-        macos: 'https://mailfence.com',
-        ios:
-          'https://mailfence.com/m/',
-        android:
-          'https://mailfence.com/m/',
-        linux: 'https://mailfence.com',
-      },
-    },
-    {
-      name: 'Tutanota',
-      image: '/static/img/tutanota.jpg',
-      url: 'https://tutanota.com/',
-      sources: {
-        windows: 'https://mail.tutanota.com/desktop/tutanota-desktop-win.exe',
-        macos: 'https://mail.tutanota.com/desktop/tutanota-desktop-mac.zip',
-        ios: 'https://itunes.apple.com/app/tutanota/id922429609',
-        android:
-          'https://play.google.com/store/apps/details?id=de.tutao.tutanota',
-        linux: 'https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage'
-      },
-    },
-    {
-      name: 'Burner Mail',
-      image: '/static/img/burnermail.jpg',
-      url: 'https://burnermail.io/',
-      sources: {
-        windows: 'https://burnermail.io/',
-        macos: 'https://burnermail.io/'
-      },
-    },
+      url: 'https://protonmail.com//'
+    }
   ],
   resources: [
     {

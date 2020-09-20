@@ -7,74 +7,14 @@ export default {
     `,
   apps: [
     {
-      name: 'Brave',
-      image: '/static/img/brave.jpg',
-      url: 'https://brave.com/',
-      sources: {
-        windows: 'https://laptop-updates.brave.com/latest/winx64',
-        macos: 'https://laptop-updates.brave.com/latest/osx',
-        ios:
-          'https://geo.itunes.apple.com/us/app/brave-web-browser/id1052879175?mt=8',
-        android:
-          'https://play.google.com/store/apps/details?id=com.brave.browser&hl=en',
-        linux:
-          'https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux',
-      },
-    },
-    {
       name: 'Firefox',
       image: '/static/img/firefox.jpg',
       url: 'https://www.mozilla.org/en-US/firefox/',
-      sources: {
-        windows: 'https://www.mozilla.org/en-US/firefox/',
-        macos: 'https://www.mozilla.org/en-US/firefox/',
-        ios: 'https://www.mozilla.org/en-US/firefox/mobile/',
-        android: 'https://www.mozilla.org/en-US/firefox/mobile/',
-        linux: 'https://support.mozilla.org/en-US/kb/install-firefox-linux',
-      },
     },
     {
-      name: 'Safari',
-      image: '/static/img/safari.jpg',
-      url: 'https://www.apple.com/safari/',
-      sources: {
-        macos: 'https://www.apple.com/safari/',
-        ios: 'https://www.apple.com/safari/',
-      },
-    },
-    {
-      name: 'Tor',
-      image: '/static/img/tor.png',
-      url: 'https://www.torproject.org/',
-      sources: {
-        windows:
-          'https://www.torproject.org/download/download-easy.html#windows',
-        macos: 'https://www.torproject.org/download/download-easy.html#mac',
-        linux: 'https://www.torproject.org/download/download-easy.html#linux',
-        android: 'https://play.google.com/store/apps/details?id=org.torproject.torbrowser_alpha',
-      },
-    },
-    {
-      name: 'Vivaldi',
-      image: '/static/img/vivaldi.png',
-      url: 'https://www.vivaldi.com/',
-      sources: {
-        windows: 'https://vivaldi.com/download/',
-        macos: 'https://vivaldi.com/download/',
-        linux: 'https://vivaldi.com/download/',
-        android: 'https://vivaldi.com/android/',
-      },
-    },
-    {
-      name: 'Cliqz',
-      image: '/static/img/cliqz.png',
-      url: 'https://cliqz.com/',
-      sources: {
-        windows: 'https://cliqz.com/download',
-        macos: 'https://cliqz.com/download',
-        ios: 'https://itunes.apple.com/de/app/cliqz-browser-suchmaschine/id1065837334?mt=8',
-        android: 'https://play.google.com/store/apps/details?hl=de&id=com.cliqz.browser',
-      },
+      name: 'Brave',
+      image: '/static/img/brave.jpg',
+      url: 'https://brave.com/'
     },
   ],
   resources: [
