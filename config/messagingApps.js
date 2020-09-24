@@ -5,39 +5,9 @@ export default {
   `,
   apps: [
     {
-      name: 'iMessage',
-      image: '/static/img/imessage.png',
-      url: 'https://support.apple.com/explore/messages',
-      sources: {
-        macos: 'https://support.apple.com/explore/messages',
-        ios: 'https://support.apple.com/explore/messages',
-      },
-    },
-    {
-      name: 'WhatsApp',
-      image: '/static/img/whatsapp.jpg',
-      url: 'https://www.whatsapp.com/',
-      sources: {
-        windows: 'https://www.whatsapp.com/download',
-        macos: 'https://www.whatsapp.com/download',
-        ios:
-          'http://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8',
-        android: 'https://play.google.com/store/apps/details?id=com.whatsapp',
-      },
-    },
-    {
       name: 'Signal',
       image: '/static/img/signal.jpg',
-      url: 'https://www.signal.org/',
-      sources: {
-        windows: 'https://www.signal.org/download/',
-        macos: 'https://www.signal.org/download/',
-        ios:
-          'https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8',
-        android:
-          'https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&referrer=utm_source%3DOWS%26utm_medium%3DWeb%26utm_campaign%3DNav',
-        linux: 'https://www.signal.org/download/',
-      },
+      url: 'https://www.signal.org/'
     },
   ],
   resources: [
