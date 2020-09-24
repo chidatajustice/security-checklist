@@ -13,9 +13,11 @@ import patching from './patching';
 import phishing from './phishing';
 import geotagging from './geotagging';
 import messagingApps from './messagingApps';
+import pwnd from './pwnd';
 
 export default {
   messagingApps,
   passwordManager,
-  dataFootPrint
+  dataFootPrint,
+  pwnd
 };

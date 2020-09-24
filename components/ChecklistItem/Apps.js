@@ -52,7 +52,6 @@ export const Apps = ({ resource, handleAppsExpand }: Props) => {
             role="region"
             tabindex="-1"
             ref={expandContentContainer}
-            style={{ '--maxHeight': `${contentHeight}px` }}
             aria-hidden={!overflowExpanded}
           >
             {overflowAppList.map(app => <AppRow key={app.name} app={app} />)}

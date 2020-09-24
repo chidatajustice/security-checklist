@@ -7,17 +7,17 @@ export default {
   `,
   apps: [
     {
-      name: 'LastPass - Free',
+      name: 'LastPass (Password Manager) - Free',
       image: '/static/img/lastpass.jpg',
       url: 'https://www.lastpass.com/'
     },
     {
-      name: 'Authy - Free',
+      name: 'Authy (MFA Tool) - Free',
       image: '/static/img/authy.jpeg',
       url: 'https://authy.com/'
     },
     {
-      name: '1Password - Paid',
+      name: '1Password (Password Manager) - Paid',
       image: '/static/img/1password.jpg',
       url: 'https://1password.com/'
     },
