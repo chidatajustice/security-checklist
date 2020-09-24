@@ -11,15 +11,14 @@ class Index extends React.Component<{}> {
     return (
       <Page displayProgress>
         <SectionHeading>
-          <Heading>Be safe on the internet.</Heading>
+          <Heading>Digital Security Checklist</Heading>
           <Subheading>
             An open source checklist of resources designed to improve your
             online privacy and security. Check things off to keep track as you
             go.
           </Subheading>
-          <Link href="/worksheet">Training worksheet available here.</Link>
         </SectionHeading>
-
+        <Link href="/worksheet">Training worksheet available here.</Link>
         <div style={{ marginTop: '40px' }} />
 
         <ShareButtons />

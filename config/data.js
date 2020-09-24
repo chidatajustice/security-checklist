@@ -5,7 +5,7 @@ import encryptedHardware from './encryptedHardware';
 import dns from './dns';
 import vpn from './vpn';
 import browsers from './browsers';
-import searchEngine from './searchEngine';
+import dataFootPrint from './dataFootPrint';
 import email from './email';
 import appPermissions from './appPermissions';
 import socialMedia from './socialMedia';
@@ -13,18 +13,11 @@ import patching from './patching';
 import phishing from './phishing';
 import geotagging from './geotagging';
 import messagingApps from './messagingApps';
+import pwnd from './pwnd';
 
 export default {
-  browsers,
   messagingApps,
   passwordManager,
-  twoFactor,
-  encryptedHardware,
-  vpn,
-  dns,
-  searchEngine,
-  email,
-  appPermissions,
-  geotagging,
-  socialMedia
+  dataFootPrint,
+  pwnd
 };
