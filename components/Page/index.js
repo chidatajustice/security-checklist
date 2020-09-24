@@ -8,22 +8,15 @@ import Icon from '../Icon';
 import Header from '../Header';
 import Footer from '../Footer';
 import { theme } from '../theme';
-import {
-  Container,
-  SectionHeading,
-  Heading,
-  Subheading,
-  InnerContainer,
-  ScrollToTop,
-} from './style';
+import { Container, Section, SectionHeading, Heading, Subheading, InnerContainer, ScrollToTop } from './style';
 import { getLocalStorageLength } from '../../lib/localStorage';
 import data from '../../config/data';
 
-export { SectionHeading, Heading, Subheading };
+export { SectionHeading, Section, Heading, Subheading };
 
 type Props = {
   children: Node,
-  displayProgress: boolean,
+  displayProgress: boolean
 };
 
 const totalItemsCount = Object.keys(data).length;
@@ -85,7 +78,8 @@ export default function Page(props: Props) {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <style>{`
+        <style>
+          {`
           :root {
             --progress: ${progress ? 100 - progress : 100}%;
           }
@@ -100,11 +94,7 @@ export default function Page(props: Props) {
         />
         <InnerContainer>{children}</InnerContainer>
         <Footer />
-        <ScrollToTop
-          isVisible={scrollToTopVisible}
-          onClick={scrollToTop}
-          type="button"
-        >
+        <ScrollToTop isVisible={scrollToTopVisible} onClick={scrollToTop} type="button">
           <Icon glyph="view-forward" size={32} />
         </ScrollToTop>
       </Container>

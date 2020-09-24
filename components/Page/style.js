@@ -1,6 +1,7 @@
 // @flow
 import styled from 'styled-components';
 import { hexa, tint } from '../globals';
+import Markdown from 'react-markdown';
 import { theme } from '../theme';
 
 export const Container = styled.div`
@@ -73,9 +74,9 @@ export const Subheading = styled.p`
     text-decoration: underline;
     text-decoration-color: ${theme.text.tertiary};
   }
-  a:active, a:focus {
-    box-shadow: 0 0 0 1px ${theme.bg.default},
-      0 0 0 3px ${props => hexa(props.theme.text.tertiary, 0.25)};
+  a:active,
+  a:focus {
+    box-shadow: 0 0 0 1px ${theme.bg.default}, 0 0 0 3px ${(props) => hexa(props.theme.text.tertiary, 0.25)};
   }
 
   & + & {
@@ -111,11 +112,11 @@ export const ScrollToTop = styled.button`
   right: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease-in-out;
-  opacity: ${props => (props.isVisible ? '1' : '0')};
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
   background: ${theme.text.default};
   background-image: radial-gradient(circle at top right, #a913de, #6ac9ff);
   color: ${theme.bg.default};
-  transform: translateY(${props => (props.isVisible ? '0' : '80px')});
+  transform: translateY(${(props) => (props.isVisible ? '0' : '80px')});
   cursor: pointer;
   z-index: 9999;
 
@@ -125,10 +126,10 @@ export const ScrollToTop = styled.button`
     transition: all 0.2s ease-in-out;
   }
 
-  &:active, &:focus {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09),
-      0 0 0 1px ${theme.bg.default},
-      0 0 0 3px ${props => hexa(props.theme.brand.default, 0.5)};
+  &:active,
+  &:focus {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09), 0 0 0 1px ${theme.bg.default},
+      0 0 0 3px ${(props) => hexa(props.theme.brand.default, 0.5)};
     outline: none;
     transform: translateY(-2px);
     transition: all 0.2s ease-in-out;
@@ -145,5 +146,18 @@ export const ScrollToTop = styled.button`
 
   @media (max-width: 556px) {
     display: none;
+  }
+`;
+
+export const Section = styled(Markdown)`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${theme.text.secondary};
+  margin-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  ul {
+    padding-left: 20px;
   }
 `;

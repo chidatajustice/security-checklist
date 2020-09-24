@@ -5,8 +5,7 @@
   "scripts": {
     "now-build": "next build",
     "dev": "next",
-    "start": "next start",
-    "build": "next build",
+    "start": "next start -p $PORT",
     "flow": "flow",
     "flow start": "flow start",
     "flow stop": "flow stop",
@@ -15,7 +14,8 @@
     "prettier": "prettier",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "build": "next build"
   },
   "dependencies": {
     "fathom-client": "^2.0.3",
@@ -58,15 +58,5 @@
       "git add"
     ]
   },
-  "pre-commit": "lint:staged",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brianlovin/security-checklist.git"
-  },
-  "author": "Brian Lovin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/brianlovin/security-checklist/issues"
-  },
-  "homepage": "https://github.com/brianlovin/security-checklist#readme"
+  "pre-commit": "lint:staged"
 }
