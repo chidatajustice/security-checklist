@@ -1,14 +1,23 @@
 export default {
   id: 'messagingApps',
-  title: 'Use encrypted messaging apps when sharing sensitive information',
-  description: `When sharing sensitive information over chat, you should be using a secure, end-to-end encrypted messaging service. End-to-end encryption ensures that only you and your intended recipient are able to view messages. Your messages will appear scrambled (and will be nearly-impossible to unscramble) to anyone else, including app developers and ISPs.
-  `,
+  title: 'Make Your Communications More Private',
+  description: `When sharing sensitive information over chat, you should be using a secure, end-to-end encrypted messaging service. End-to-end encryption ensures that only you and your intended recipient are able to view messages. Your messages will appear scrambled (and will be nearly-impossible to unscramble) to anyone else, including app developers.`,
   apps: [
     {
-      name: 'Signal',
+      name: 'Signal - Free',
       image: '/static/img/signal.jpg',
       url: 'https://www.signal.org/'
     },
+    {
+      name: 'Cryptpad.fr - Free',
+      image: '/static/img/cryptpad.png',
+      url: 'https://cryptpad.fr/'
+    },
+    {
+      name: 'ProtonMail - Free',
+      image: '/static/img/protonmail.jpg',
+      url: 'https://protonmail.com//'
+    }
   ],
   resources: [
     {

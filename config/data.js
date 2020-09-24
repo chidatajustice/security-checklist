@@ -5,7 +5,7 @@ import encryptedHardware from './encryptedHardware';
 import dns from './dns';
 import vpn from './vpn';
 import browsers from './browsers';
-import searchEngine from './searchEngine';
+import dataFootPrint from './dataFootPrint';
 import email from './email';
 import appPermissions from './appPermissions';
 import socialMedia from './socialMedia';
@@ -15,16 +15,7 @@ import geotagging from './geotagging';
 import messagingApps from './messagingApps';
 
 export default {
-  browsers,
   messagingApps,
   passwordManager,
-  twoFactor,
-  encryptedHardware,
-  vpn,
-  dns,
-  searchEngine,
-  email,
-  appPermissions,
-  geotagging,
-  socialMedia
+  dataFootPrint
 };
