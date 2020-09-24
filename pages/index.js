@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import Link from 'next/link';
 import Page, { SectionHeading, Heading, Subheading } from '../components/Page';
 import Checklist from '../components/Checklist';
 import ShareButtons from '../components/ShareButtons';
@@ -16,6 +17,7 @@ class Index extends React.Component<{}> {
             online privacy and security. Check things off to keep track as you
             go.
           </Subheading>
+          <Link href="/worksheet">Training worksheet available here.</Link>
         </SectionHeading>
 
         <div style={{ marginTop: '40px' }} />
