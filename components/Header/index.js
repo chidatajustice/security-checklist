@@ -35,18 +35,9 @@ export default function Header(props: Props) {
         </Link>
         <Link href="/worksheet">
           <GhostButton as="a" href="/worksheet">
-            Worksheet
+            Worksheet for Training
           </GhostButton>
         </Link>
-
-        <PrimaryButton
-          href="https://github.com/brianlovin/security-checklist"
-          target="_blank"
-          rel="noopener noreferrer"
-          as="a"
-        >
-          Contribute
-        </PrimaryButton>
       </ButtonRowContainer>
 
       {displayProgress && (

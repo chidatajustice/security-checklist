@@ -12,17 +12,14 @@ class Index extends React.Component<{}> {
       <Page displayProgress>
         <SectionHeading>
           <Heading>Digital Security Checklist</Heading>
-          <Subheading>
-            An open source checklist of resources designed to improve your
+          <div>
+            This checklist was designed to assist with the Chicago D4BL Digital Security Training. This is an open source checklist of resources designed to improve your
             online privacy and security. Check things off to keep track as you
-            go.
-          </Subheading>
+            go. For more information about this checklist and Chicago D4BL, <Link href="/about"> visit here</Link>.
+          </div>
+          <br />
+          <Link href="/worksheet">Training worksheet available here.</Link>
         </SectionHeading>
-        <Link href="/worksheet">Training worksheet available here.</Link>
-        <div style={{ marginTop: '40px' }} />
-
-        <ShareButtons />
-
         <Checklist />
 
         <BottomShare />

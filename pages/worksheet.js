@@ -15,6 +15,9 @@ export default function Worksheet() {
       <SectionHeading>
         <Heading>Digital Security Training Worksheet</Heading>
       </SectionHeading>
+      <br/>
+      <p>This worksheet is used to practice threat modeling and was originally designed for the D4BL digitial security training.</p>
+      <br/>
       <Subheading>
         Black LGBT youth living with conservative religious family
         </Subheading>
