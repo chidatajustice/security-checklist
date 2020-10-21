@@ -22,9 +22,9 @@ export default function Worksheet() {
         Black LGBT youth living with conservative religious family
         </Subheading>
         <p>What information do I want to keep secret?</p>
-        <textarea style={{width:"100%", height: "10vh"}}/>
+        <textarea style={{width:"100%", height: "10vh", margin: "10px 0px"}} value="My sexual and or gender identity, any relationships I may have"/>
         <p>From whom?</p>
-        <textarea style={{width:"100%", height: "10vh"}}/>
+        <textarea style={{width:"100%", height: "10vh", marginTop: "10px" }} value="My family members, members of my family’s church,  and their circle of friends"/>
         <p>What tools do they have (to try and get the information)?</p>
         <textarea style={{width:"100%", height: "10vh"}}/>
         <p>How likely is it that I will need to protect it?</p>
@@ -34,13 +34,13 @@ export default function Worksheet() {
         <p>What steps am I willing to take to protect information more:</p>
         <textarea style={{width:"100%", height: "10vh"}}/>
 
-        <Subheading style={{ marginTop: "20px", paddingTop: "20px", borderTop: "4px white solid" }}>
+        <Subheading style={{ margin: "20px 0px", paddingTop: "20px" }}>
         Black activist who is a leader in public protests
         </Subheading>
         <p>What information do I want to keep secret?</p>
-        <textarea style={{width:"100%", height: "10vh"}}/>
+        <textarea style={{width:"100%", height: "10vh", margin: "10px 0px"}} value="My contact information and my parents contact information"/>
         <p>From whom?</p>
-        <textarea style={{width:"100%", height: "10vh"}}/>
+        <textarea style={{width:"100%", height: "10vh"}} value="Doxxers trying to harass me" />
         <p>What tools do they have (to try and get the information)?</p>
         <textarea style={{width:"100%", height: "10vh"}}/>
         <p>How likely is it that I will need to protect it?</p>
