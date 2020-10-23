@@ -17,6 +17,11 @@ export default {
       url: 'https://riseup.net/en/vpn'
     },
     {
+      name: 'DIY Data Removal Tutorial - Free',
+      image: '',
+      url: 'https://www.vice.com/en/article/ne9b3z/how-to-get-off-data-broker-and-people-search-sites-pipl-spokeo'
+    },
+    {
       name: 'DeleteMe (Data Removal Service) - Paid',
       image: '/static/img/deleteme.png',
       url: 'https://joindeleteme.com/'

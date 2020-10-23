@@ -7,7 +7,7 @@ export default function ShareButtons() {
   return (
     <Container>
       <FacebookButton
-        href="https://www.facebook.com/sharer/sharer.php?u=https://fierce-retreat-27011.herokuapp.com/"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://chid4blsecurity.herokuapp.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -15,14 +15,14 @@ export default function ShareButtons() {
       </FacebookButton>
 
       <TwitterButton
-        href="http://twitter.com/share?text=Check out Security Checklist, a checklist to help people stay safe online&url=https://fierce-retreat-27011.herokuapp.com/"
+        href="http://twitter.com/share?text=Check out Security Checklist, a checklist to help people stay safe online&url=https://chid4blsecurity.herokuapp.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
         Tweet
       </TwitterButton>
 
-      <CopyLinkButton text="https://fierce-retreat-27011.herokuapp.com/">
+      <CopyLinkButton text="https://chid4blsecurity.herokuapp.com/">
         Share Link
       </CopyLinkButton>
     </Container>
